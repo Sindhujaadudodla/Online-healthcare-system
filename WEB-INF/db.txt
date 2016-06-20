@@ -1,0 +1,9 @@
+create database psmpa;
+use psmpa;
+create table adddoctor(username varchar(50),password varchar(50),usertype varchar(50),contactno varchar(12),address varchar(50),qualification varchar(50),speciality varchar(50),hospital_id varchar(50));
+
+create table patientprofile(patient_id varchar(50),patient_name varchar(50),dob date,age varchar(50),gender varchar(10),contact_no varchar(12),address varchar(50),problem varchar(50),problem_desc varchar(250));
+
+create table accesspolicy(patient_id varchar(50),doctor_name varchar(50),qualification varchar(50),speciality varchar(50),hospital_id varchar(50));
+
+create table prescription(patient_id varchar(50),prescription varchar(250),doctor_name varchar(50),date_time timestamp);

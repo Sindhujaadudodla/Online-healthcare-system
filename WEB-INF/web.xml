@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>HR Operations Manager</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  
+  <servlet>
+    <servlet-name>Admin</servlet-name>
+    <servlet-class>com.Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>AddPhysician</servlet-name>
+    <servlet-class>com.AddPhysician</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddPhysician</servlet-name>
+    <url-pattern>/AddPhysician</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+
+     <servlet>
+    <servlet-name>Patient</servlet-name>
+    <servlet-class>com.Patient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Patient</servlet-name>
+    <url-pattern>/Patient</url-pattern>
+  </servlet-mapping>
+
+     <servlet>
+    <servlet-name>AccessControl</servlet-name>
+    <servlet-class>com.AccessControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccessControl</servlet-name>
+    <url-pattern>/AccessControl</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>Physician</servlet-name>
+    <servlet-class>com.Physician</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Physician</servlet-name>
+    <url-pattern>/Physician</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>Script</servlet-name>
+    <servlet-class>com.Script</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Script</servlet-name>
+    <url-pattern>/Script</url-pattern>
+  </servlet-mapping>
+</web-app>
